@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="grid sm:grid-cols-2 items-center gap-16 my-6 mx-auto max-w-4xl bg-white text-[#333] font-[sans-serif]">
+    <div
+      id="contact"
+      className="grid sm:grid-cols-2 items-center gap-16 mt-4 mx-auto p-8 bg-[#28293d] text-[#f8fdea] font-[sans-serif] border-b-4 border-b-[#fee9ce]"
+    >
       <div>
         <h1 className="text-3xl font-extrabold">Let's Talk</h1>
         <p className="text-sm text-gray-400 mt-3">
@@ -88,7 +91,7 @@ export default function Contact() {
           </ul>
         </div>
       </div>
-      <form className="ml-auo space-y-4">
+      <form className="ml-auo space-y-4 flex flex-col justify-center items-center">
         <input
           type="text"
           placeholder="Name"
@@ -111,7 +114,7 @@ export default function Contact() {
         ></textarea>
         <button
           type="button"
-          className="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-3 w-full"
+          className="text-white bg-violet-600  hover:bg-violet-700 font-semibold rounded-md text-md px-4 py-3 w-1/2"
         >
           Send
         </button>
