@@ -5,14 +5,16 @@ import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
+import About from "./components/About";
 
 export default function Home() {
   return (
     <main>
       <Header />
       <Hero />
-      <Projects />
+      <About />
       <Skills />
+      <Projects />
       <Contact />
       <Footer />
     </main>
