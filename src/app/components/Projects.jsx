@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -17,12 +18,14 @@ export default function Projects() {
           title="E-commerce Website"
           description="Pitmasters BBQ was one of my first projects it features my knowledge of HTML, CSS, and Bootstrap."
         />
-        <Image
-          src="/ecommerce.png"
-          alt="ecommerce website"
-          height={200}
-          width={200}
-        />
+        <Link href="#ecommerce">
+          <Image
+            src="/ecommerce.png"
+            alt="ecommerce website"
+            height={200}
+            width={200}
+          />
+        </Link>
       </div>
       <div className="flex gap-6 items-center">
         <Image src="/blog.png" alt="blog website" height={200} width={200} />
