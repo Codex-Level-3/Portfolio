@@ -100,6 +100,7 @@ export default function Contact() {
         className="ml-auto space-y-4 flex flex-col justify-center items-center text-black"
       >
         <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
         <label>
           Name:
           <input
