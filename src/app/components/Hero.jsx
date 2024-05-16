@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="cursor-pointer">
           <Link
             className="px-6 py-3 min-w-[200px] shadow-lg shadow-purple-200 rounded-full text-lg tracking-wider font-medium outline-none border-2 border-purple-600 active:shadow-inner bg-purple-600 text-[#f8fdea] hover:bg-transparent hover:text-[#fee9ce] transition-all duration-300"
-            href="#"
+            href="https://example.com/"
           >
             Get Resume
             <svg
