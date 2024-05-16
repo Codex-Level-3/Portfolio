@@ -97,6 +97,7 @@ export default function Contact() {
         netlify-honeypot="bot-field"
         data-netlify="true"
         name="contact"
+        method="POST"
         className="ml-auto space-y-4 flex flex-col justify-center items-center text-black"
       >
         <input type="hidden" name="bot-field" />
