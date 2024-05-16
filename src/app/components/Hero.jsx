@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="pt-5 mx-4">
       <h2 className="text-5xl font-bold text-[#f8fdea]">
-        Hi! I'm Laqwanda, a Fullstack Software Developer.
+        Hi! I am Laqwanda, a Fullstack Software Developer.
       </h2>
       <div className="flex justify-normal items-center gap-6 pt-4 text-center">
         <div className="cursor-pointer px-6 py-3 min-w-[140px] shadow-lg shadow-purple-200 rounded-full text-[#fee9ce] text-lg tracking-wider font-medium outline-none border-2 border-purple-600 active:shadow-inner hover:bg-purple-600 hover:text-[#f8fdea] transition-all duration-300">

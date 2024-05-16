@@ -8,10 +8,10 @@ export default function Contact() {
       className="grid sm:grid-cols-2 items-center gap-16 mt-4 mx-auto p-8 bg-[#28293d] text-[#f8fdea] font-[sans-serif] border-b-4 border-b-[#fee9ce]"
     >
       <div>
-        <h1 className="text-3xl font-extrabold">Let's Talk</h1>
+        <h1 className="text-3xl font-extrabold">Contact Me</h1>
         <p className="text-sm text-gray-400 mt-3">
           Have some big idea or brand to develop and need help? Then reach out
-          we'd love to hear about your project and provide help.
+          we would love to hear about your project and provide help.
         </p>
         <div className="mt-12">
           <h2 className="text-lg font-extrabold">Email</h2>
@@ -95,7 +95,7 @@ export default function Contact() {
       <form
         netlify
         netlify-honeypot="bot-field"
-        className="ml-auo space-y-4 flex flex-col justify-center items-center"
+        className="ml-auto space-y-4 flex flex-col justify-center items-center"
       >
         <input type="hidden" name="bot-field" />
         <input
