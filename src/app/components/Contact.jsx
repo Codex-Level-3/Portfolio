@@ -91,7 +91,12 @@ export default function Contact() {
           </ul>
         </div>
       </div>
-      <form className="ml-auo space-y-4 flex flex-col justify-center items-center">
+      <form
+        netlify
+        netlify-honeypot="bot-field"
+        className="ml-auo space-y-4 flex flex-col justify-center items-center"
+      >
+        <input type="hidden" name="bot-field" />
         <input
           type="text"
           placeholder="Name"
