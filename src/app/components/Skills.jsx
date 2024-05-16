@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import SkillCard from "./SkillCard";
 import { skills } from "./skillsList";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
@@ -12,17 +11,21 @@ export default function Skills() {
   useEffect(() => {
     let timerId;
     if (emblaApi) {
-      // Start autoplay manually
-      const startAutoplay = () => {
+      const startContinuousAutoplay = () => {
         timerId = setInterval(() => {
-          emblaApi.scrollNext();
+          if (emblaApi.canScrollNext()) {
+            emblaApi.scrollNext();
+          } else {
+            // If at the end, reset to the first slide
+            emblaApi.scrollTo(0);
+          }
         }, 2000);
       };
 
-      // Call startAutoplay to initiate autoplay
-      startAutoplay();
+      // Call startContinuousAutoplay to initiate continuous autoplay
+      startContinuousAutoplay();
 
-      // Stop autoplay when the component unmounts
+      // Clean up the interval when the component unmounts
       return () => {
         clearInterval(timerId);
       };
@@ -30,7 +33,10 @@ export default function Skills() {
   }, [emblaApi]);
 
   return (
-    <section className="bg-gradient-to-r from-zinc-900 to-[#3b2869] mt-4 pt-2 pb-8">
+    <section
+      id="skills"
+      className="bg-gradient-to-r from-zinc-900 to-[#3b2869] mt-4 pt-2 pb-8"
+    >
       <h2 className="text-center font-bold text-[#f8fdea] text-3xl p-2">
         Skills
       </h2>
