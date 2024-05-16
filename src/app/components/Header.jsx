@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Header() {
@@ -13,9 +14,15 @@ export default function Header() {
         id="nav-menu"
         className="flex justify-around gap-5 text-lg font-semibold"
       >
-        <li>ABOUT ME</li>
-        <li>SKILLS</li>
-        <li>PROJECTS</li>
+        <li>
+          <Link href="/#about">ABOUT ME</Link>
+        </li>
+        <li>
+          <Link href="/#skills">SKILLS</Link>
+        </li>
+        <li>
+          <Link href="/#projects">PROJECTS</Link>
+        </li>
         <li>BLOG</li>
       </ul>
     </div>
