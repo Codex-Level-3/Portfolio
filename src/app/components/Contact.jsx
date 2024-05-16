@@ -124,7 +124,7 @@ export default function Contact() {
           className="w-full rounded-md px-4 bg-gray-100 text-sm pt-3 outline-[#007bff]"
         ></textarea>
         <button
-          type="button"
+          type="submit"
           className="text-white bg-violet-600  hover:bg-violet-700 font-semibold rounded-md text-md px-4 py-3 w-1/2"
         >
           Send
