@@ -95,25 +95,30 @@ export default function Contact() {
       <form
         netlify
         netlify-honeypot="bot-field"
+        name="contact"
         className="ml-auto space-y-4 flex flex-col justify-center items-center"
       >
         <input type="hidden" name="bot-field" />
         <input
+          name="name"
           type="text"
           placeholder="Name"
           className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]"
         />
         <input
+          name="email"
           type="email"
           placeholder="Email"
           className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]"
         />
         <input
+          name="subject"
           type="text"
           placeholder="Subject"
           className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]"
         />
         <textarea
+          name="message"
           placeholder="Message"
           rows="6"
           className="w-full rounded-md px-4 bg-gray-100 text-sm pt-3 outline-[#007bff]"
