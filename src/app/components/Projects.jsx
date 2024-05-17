@@ -18,7 +18,7 @@ export default function Projects() {
           title="E-commerce Website"
           description="Pitmasters BBQ was one of my first projects it features my knowledge of HTML, CSS, and Bootstrap."
         />
-        <Link href="#ecommerce">
+        <Link href="/projects">
           <Image
             src="/ecommerce.png"
             alt="ecommerce website"
