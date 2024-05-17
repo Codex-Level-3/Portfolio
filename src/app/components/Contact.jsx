@@ -1,7 +1,36 @@
+"use client";
+import axios from "axios";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  }
+  async function handleSubmit(e) {
+    e.preventDefault();
+    try {
+      const response = await axios.post("/api/contact", formData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (response.status === 200) {
+        console.log("Message sent");
+      }
+    } catch (error) {
+      console.error("Error sending message", error);
+    }
+  }
   return (
     <div
       id="contact"
@@ -31,32 +60,88 @@ export default function Contact() {
                   />
                 </svg>
               </div>
-              <Link
-                href="https://example.com/"
-                className="text-[#007bff] text-sm ml-3"
-              >
+              <div className="text-[#007bff] text-sm ml-3">
                 <small className="block">Mail</small>
-                <strong>info@example.com</strong>
-              </Link>
+                <strong>nettleslaqwanda@gmail.com</strong>
+              </div>
             </li>
           </ul>
         </div>
         <div className="mt-12">
-          <h2 className="text-lg font-extrabold">Socials</h2>
+          <h2 className="text-lg font-extrabold">Stay In Touch!</h2>
           <ul className="flex mt-3 space-x-4">
             <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-              <Link href="https://example.com/">
+              <Link href="https://github.com/Laqwanda-Nettles">
                 <svg
+                  className="text-3xl"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20px"
-                  height="20px"
-                  fill="#007bff"
+                  width="1em"
+                  height="1em"
                   viewBox="0 0 24 24"
                 >
-                  <path
-                    d="M6.812 13.937H9.33v9.312c0 .414.335.75.75.75l4.007.001a.75.75 0 0 0 .75-.75v-9.312h2.387a.75.75 0 0 0 .744-.657l.498-4a.75.75 0 0 0-.744-.843h-2.885c.113-2.471-.435-3.202 1.172-3.202 1.088-.13 2.804.421 2.804-.75V.909a.75.75 0 0 0-.648-.743A26.926 26.926 0 0 0 15.071 0c-7.01 0-5.567 7.772-5.74 8.437H6.812a.75.75 0 0 0-.75.75v4c0 .414.336.75.75.75zm.75-3.999h2.518a.75.75 0 0 0 .75-.75V6.037c0-2.883 1.545-4.536 4.24-4.536.878 0 1.686.043 2.242.087v2.149c-.402.205-3.976-.884-3.976 2.697v2.755c0 .414.336.75.75.75h2.786l-.312 2.5h-2.474a.75.75 0 0 0-.75.75V22.5h-2.505v-9.312a.75.75 0 0 0-.75-.75H7.562z"
-                    data-original="#000000"
-                  />
+                  <mask
+                    id="lineMdGithubLoop0"
+                    width="24"
+                    height="24"
+                    x="0"
+                    y="0"
+                  >
+                    <g fill="#fff">
+                      <ellipse cx="9.5" cy="9" rx="1.5" ry="1" />
+                      <ellipse cx="14.5" cy="9" rx="1.5" ry="1" />
+                    </g>
+                  </mask>
+                  <g
+                    fill="none"
+                    stroke="#007bff"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeDasharray="30"
+                      strokeDashoffset="30"
+                      d="M12 4C13.6683 4 14.6122 4.39991 15 4.5C15.5255 4.07463 16.9375 3 18.5 3C18.8438 4 18.7863 5.21921 18.5 6C19.25 7 19.5 8 19.5 9.5C19.5 11.6875 19.017 13.0822 18 14C16.983 14.9178 15.8887 15.3749 14.5 15.5C15.1506 16.038 15 17.3743 15 18C15 18.7256 15 21 15 21M12 4C10.3317 4 9.38784 4.39991 9 4.5C8.47455 4.07463 7.0625 3 5.5 3C5.15625 4 5.21371 5.21921 5.5 6C4.75 7 4.5 8 4.5 9.5C4.5 11.6875 4.98301 13.0822 6 14C7.01699 14.9178 8.1113 15.3749 9.5 15.5C8.84944 16.038 9 17.3743 9 18C9 18.7256 9 21 9 21"
+                    >
+                      <animate
+                        fill="freeze"
+                        attributeName="stroke-dashoffset"
+                        dur="0.6s"
+                        values="30;0"
+                      />
+                    </path>
+                    <path strokeDasharray="10" strokeDashoffset="10" d="M9 19">
+                      <animate
+                        fill="freeze"
+                        attributeName="stroke-dashoffset"
+                        begin="0.7s"
+                        dur="0.2s"
+                        values="10;0"
+                      />
+                      <animate
+                        attributeName="d"
+                        dur="3s"
+                        repeatCount="indefinite"
+                        values="M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5;M9 19c-1.406 0-3-.5-4-.5-.532 0-1 0-2-.5;M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5"
+                      />
+                    </path>
+                  </g>
+                  <rect
+                    width="8"
+                    height="4"
+                    x="8"
+                    y="11"
+                    fill="#007bff"
+                    mask="url(#lineMdGithubLoop0)"
+                  >
+                    <animate
+                      attributeName="y"
+                      dur="10s"
+                      keyTimes="0;0.45;0.46;0.54;0.55;1"
+                      repeatCount="indefinite"
+                      values="11;11;7;7;11;11"
+                    />
+                  </rect>
                 </svg>
               </Link>
             </li>
@@ -76,66 +161,46 @@ export default function Contact() {
                 </svg>
               </Link>
             </li>
-            <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-              <Link href="https://example.com/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20px"
-                  height="20px"
-                  fill="#007bff"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 9.3a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm0-1.8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm5.85-.225a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0ZM12 4.8c-2.227 0-2.59.006-3.626.052-.706.034-1.18.128-1.618.299a2.59 2.59 0 0 0-.972.633 2.601 2.601 0 0 0-.634.972c-.17.44-.265.913-.298 1.618C4.805 9.367 4.8 9.714 4.8 12c0 2.227.006 2.59.052 3.626.034.705.128 1.18.298 1.617.153.392.333.674.632.972.303.303.585.484.972.633.445.172.918.267 1.62.3.993.047 1.34.052 3.626.052 2.227 0 2.59-.006 3.626-.052.704-.034 1.178-.128 1.617-.298.39-.152.674-.333.972-.632.304-.303.485-.585.634-.972.171-.444.266-.918.299-1.62.047-.993.052-1.34.052-3.626 0-2.227-.006-2.59-.052-3.626-.034-.704-.128-1.18-.299-1.618a2.619 2.619 0 0 0-.633-.972 2.595 2.595 0 0 0-.972-.634c-.44-.17-.914-.265-1.618-.298-.993-.047-1.34-.052-3.626-.052ZM12 3c2.445 0 2.75.009 3.71.054.958.045 1.61.195 2.185.419A4.388 4.388 0 0 1 19.49 4.51c.457.45.812.994 1.038 1.595.222.573.373 1.227.418 2.185.042.96.054 1.265.054 3.71 0 2.445-.009 2.75-.054 3.71-.045.958-.196 1.61-.419 2.185a4.395 4.395 0 0 1-1.037 1.595 4.44 4.44 0 0 1-1.595 1.038c-.573.222-1.227.373-2.185.418-.96.042-1.265.054-3.71.054-2.445 0-2.75-.009-3.71-.054-.958-.045-1.61-.196-2.185-.419A4.402 4.402 0 0 1 4.51 19.49a4.414 4.414 0 0 1-1.037-1.595c-.224-.573-.374-1.227-.419-2.185C3.012 14.75 3 14.445 3 12c0-2.445.009-2.75.054-3.71s.195-1.61.419-2.185A4.392 4.392 0 0 1 4.51 4.51c.45-.458.994-.812 1.595-1.037.574-.224 1.226-.374 2.185-.419C9.25 3.012 9.555 3 12 3Z"></path>
-                </svg>
-              </Link>
-            </li>
           </ul>
         </div>
       </div>
       <form
-        netlify={true}
-        netlify-honeypot="bot-field"
-        data-netlify="true"
+        onSubmit={handleSubmit}
         name="contact"
         method="POST"
-        className="ml-auto space-y-4 flex flex-col justify-center items-center text-black"
+        className="ml-auto space-y-4 flex flex-col justify-center items-center"
       >
-        <input type="hidden" name="bot-field" />
-
-        <label>
+        <label className="text-xl text-[#f8fdea]">
           Name:
           <input
+            onChange={handleChange}
+            value={formData.name}
             name="name"
             type="text"
             placeholder="Name"
-            className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]"
+            className="w-full text-[#333] rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]"
           />
         </label>
-        <label>
+        <label className="text-xl text-[#f8fdea]">
           Email:
           <input
+            onChange={handleChange}
+            value={formData.email}
             name="email"
             type="email"
             placeholder="Email"
-            className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]"
+            className="w-full text-[#333] rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]"
           />
         </label>
-        <label>
-          Subject:
-          <input
-            name="subject"
-            type="text"
-            placeholder="Subject"
-            className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-[#007bff]"
-          />
-        </label>
-        <label>
+        <label className="text-xl text-[#f8fdea]">
           Message:
           <textarea
+            onChange={handleChange}
+            value={formData.message}
             name="message"
             placeholder="Message"
             rows="6"
-            className="w-full rounded-md px-4 bg-gray-100 text-sm pt-3 outline-[#007bff]"
+            className="w-full text-[#333] rounded-md px-4 bg-gray-100 text-sm pt-3 outline-[#007bff]"
           ></textarea>
         </label>
 
