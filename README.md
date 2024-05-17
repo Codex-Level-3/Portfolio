@@ -55,6 +55,31 @@ Discovering various carousel libraries introduced me to TypeScript. I aim to rev
 
 ![alt text](image.png)
 
+### Day 3:
+
+#### Tasks Completed:
+
+- Finished the development of the Projects component
+- Utilized Tailwind CSS to style the ProjectCard component for a consistent and responsive design.
+- Created a Projects Page for Portfolio:
+  - Developed a dedicated Projects page within the portfolio to showcase various projects.
+- Added Ecommerce, Breadcrumb, and GitHubSvg Components to Projects.
+
+#### Challenges and Solutions:
+
+I encountered difficulties while integrating the Contact component with Netlify for form submissions. Despite following the Netlify documentation, I was unable to resolve the issue. To address this, I plan to revisit the documentation, seek community support, and explore alternative solutions.
+
+#### Learnings and Insights:
+
+When troubleshooting deployment issues I recognized the need for better debugging practices and thorough documentation review when facing deployment challenges.
+
+#### Next Steps:
+
+- Resolve the Contact Component Issue:
+  - Continue to investigate the integration problem with Netlify and implement a solution.
+- Finish the development of the projects page and apply final styling to ensure it matches the overall portfolio design.
+- Review and refine other components as needed, ensuring optimal performance and aesthetics.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
