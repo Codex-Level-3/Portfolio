@@ -56,7 +56,7 @@ export default function Projects() {
           description="What's for Dinner? project incorporated API integration, object-oriented programming, CSS Animations, and SCSS 7-1 architecture."
         />
         <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <Link href="/projects#recipes">
+          <Link href="/projects#recipe">
             <Image
               src="/recipe.png"
               alt="recipe website"
