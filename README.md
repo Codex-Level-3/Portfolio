@@ -1,5 +1,7 @@
 # Portfolio
 
+This portfolio project is a journey of creation and learning, documented through daily logs. It's built using Next.js, incorporating various components like Contact, Footer, Header, Hero, ProjectCard, Projects, and Skills. Each day marks progress, challenges, solutions, and insights gained.
+
 ## Daily Logs
 
 ### Day 1:
@@ -79,6 +81,19 @@ When troubleshooting deployment issues I recognized the need for better debuggin
   - Continue to investigate the integration problem with Netlify and implement a solution.
 - Finish the development of the projects page and apply final styling to ensure it matches the overall portfolio design.
 - Review and refine other components as needed, ensuring optimal performance and aesthetics.
+
+### Days 4 + 5:
+
+#### Tasks Completed:
+
+- Installed and applied Framer Motion for enhanced animations and transitions.
+- Implemented email sending functionality for contact form using using Nodemailer.
+- Fixed link routing issues for the Header component and projects page, ensuring smooth navigation throughout the application.
+- Checked each component for any missed errors.
+
+#### Learnings and Insights:
+
+Through this coding process, I've gained valuable insights into handling form submissions and implementing email functionality using Node.js. In `route.js`, I learned how to extract data from incoming POST requests and configure Nodemailer to send emails through Gmail. Then, in `Contact.jsx`, I built a user-friendly contact form component using React, allowing visitors to input their name, email, and message. Upon form submission, the data is sent to the server, and upon success, a confirmation message is logged. This experience has deepened my understanding of server-side integration in React applications and honed my skills in managing form submissions, essential for creating dynamic and interactive web experiences.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
