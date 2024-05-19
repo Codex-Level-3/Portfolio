@@ -8,7 +8,9 @@ export default function Header() {
       className="p-3 h-16 w-full flex justify-between items-center"
     >
       <div>
-        <h1 className="text-4xl font-bold">LN</h1>
+        <Link href="/">
+          <h1 className="text-4xl font-bold">LN</h1>
+        </Link>
       </div>
       <ul
         id="nav-menu"
@@ -21,9 +23,8 @@ export default function Header() {
           <Link href="/#skills">SKILLS</Link>
         </li>
         <li>
-          <Link href="/#projects">PROJECTS</Link>
+          <Link href="/projects">PROJECTS</Link>
         </li>
-        <li>BLOG</li>
       </ul>
     </div>
   );
