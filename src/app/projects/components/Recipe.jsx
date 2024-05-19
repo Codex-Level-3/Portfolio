@@ -25,11 +25,11 @@ export default function Recipe() {
       </h4>
       <p className="text-xl text-slate-100">
         The concept came from my sister and I asking the same question to each
-        other everyday - "What&apos;s for Dinner?". Since we both love trying
-        and exploring different cuisines, and I have a background in Culinary
-        Arts, it was natural for me to create a recipe app. This project not
-        only showcases my coding skills but also combines my passion for
-        culinary arts with technology.
+        other everyday - &quot;What&apos;s for Dinner?&quot;. Since we both love
+        trying and exploring different cuisines, and I have a background in
+        Culinary Arts, it was natural for me to create a recipe app. This
+        project not only showcases my coding skills but also combines my passion
+        for culinary arts with technology.
       </p>
       <h4 className="text-2xl text-orange-200 m-3">
         What did I learned during this project?
