@@ -39,8 +39,11 @@ export default function Contact() {
       <div>
         <h1 className="text-3xl font-extrabold">Contact Me</h1>
         <p className="text-sm text-gray-400 mt-3">
-          Have some big idea or brand to develop and need help? Then reach out
-          we would love to hear about your project and provide help.
+          I'm always excited to connect and discuss new opportunities, projects,
+          or any questions you might have. Whether you have a project in mind or
+          just want to network, feel free to reach out. Please fill out the form
+          with your details, and I'll get back to you as soon as possible.
+          Looking forward to hearing from you!
         </p>
         <div className="mt-12">
           <h2 className="text-lg font-extrabold">Email</h2>
