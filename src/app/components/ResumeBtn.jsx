@@ -12,7 +12,7 @@ export default function ResumeBtn() {
       <div className="cursor-pointer">
         <Link
           className="px-6 py-3 min-w-[200px] shadow-lg shadow-purple-200 rounded-full text-lg tracking-wider font-medium outline-none border-2 border-purple-600 active:shadow-inner bg-purple-600 text-[#f8fdea] hover:bg-transparent hover:text-[#fee9ce] transition-all duration-300"
-          href="https://example.com/"
+          href="https://www.canva.com/design/DAGFuMbR6ZY/dOmzVqxX-72lGniPQ4cGEg/view?utm_content=DAGFuMbR6ZY&utm_campaign=designshare&utm_medium=link&utm_source=editor"
         >
           Get Resume
           <svg
