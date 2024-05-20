@@ -4,11 +4,14 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Contact() {
+  // State to manage form data
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+
+  // Handler to update form data state on input change
   function handleChange(e) {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -16,6 +19,8 @@ export default function Contact() {
       [name]: value,
     }));
   }
+
+  // Handler to submit form data to the server
   async function handleSubmit(e) {
     e.preventDefault();
     try {
@@ -31,6 +36,7 @@ export default function Contact() {
       console.error("Error sending message", error);
     }
   }
+
   return (
     <div
       id="contact"
