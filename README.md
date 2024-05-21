@@ -95,6 +95,26 @@ When troubleshooting deployment issues I recognized the need for better debuggin
 
 Through this coding process, I've gained valuable insights into handling form submissions and implementing email functionality using Node.js. In `route.js`, I learned how to extract data from incoming POST requests and configure Nodemailer to send emails through Gmail. Then, in `Contact.jsx`, I built a user-friendly contact form component using React, allowing visitors to input their name, email, and message. Upon form submission, the data is sent to the server, and upon success, a confirmation message is logged. This experience has deepened my understanding of server-side integration in React applications and honed my skills in managing form submissions, essential for creating dynamic and interactive web experiences.
 
+## Projects
+
+These are links to the following projects showcased in the portfolio.
+
+### Ecommerce
+
+https://github.com/Laqwanda-Nettles/Bootstrap-Project
+
+### Blog
+
+https://github.com/Laqwanda-Nettles/Personal-Webpage
+
+### Recipe App
+
+https://github.com/Laqwanda-Nettles/Recipe-App
+
+### Community Marketplace
+
+https://github.com/Codex-Level-3/community-marketplace
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
