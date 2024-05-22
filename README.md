@@ -1,6 +1,46 @@
 # Portfolio
 
+Hi everyone! My name is Laqwanda. I’m a software developer with a journey that began in Culinary Arts and is now transitioning into the world of tech. Currently, I’m pursuing a Full-Stack Software Development certificate from CodeX Academy. My experience in culinary arts taught me creativity, precision, and attention to detail—skills that I now apply to coding and software development.
+
+The professors at CodeX have helped me build a strong foundation in full-stack development. From HTML, CSS, and JavaScript to utilizing frameworks such as Bootstrap, Tailwind, Framer Motion, and backend applications like Node.js, Next.js, and React. I’m continually expanding my technical expertise by exploring new languages and creating innovative projects.
+
+I am someone who genuinely loves learning and research, which drives me to take on challenges and refine my skills. My diverse experiences, from caregiving to catering, have made me adaptable and versatile. These roles have equipped me with a unique perspective and problem-solving approach in software development.
+
+In conclusion, I’m excited about the endless possibilities in technology and look forward to connecting with others who share this passion. If you have any questions or want to discuss potential collaborations, please feel free to reach out!
+
 This portfolio project is a journey of creation and learning, documented through daily logs. It's built using Next.js, incorporating various components like Contact, Footer, Header, Hero, ProjectCard, Projects, and Skills. Each day marks progress, challenges, solutions, and insights gained.
+
+## Portfolio Projects
+
+The links to each projects' repository and live site is under the project's description.
+
+### Ecommerce - Pitmasters BBQ
+
+Pitmasters Back Alley BBQ was one of the first projects I built. This e-commerce project embodied my introduction to HTML, CSS, and Bootstrap components.
+
+https://github.com/Laqwanda-Nettles/Bootstrap-Project
+https://laqwanda-nettles.github.io/Bootstrap-Project/
+
+### Blog
+
+My next project was a blog-inspired site that accumulated everything I learned from Level 1 at CodeX. It was created to provide visitors with an opportunity to learn more about me and my interests—cooking and learning languages—while honing my web development skills. During this project, I experimented with CSS animations, as you see here on the Landing Page. JavaScript for loops, conditional statements, and DOM manipulation are showcased with the Daily Affirmation and Quote features.
+
+https://github.com/Laqwanda-Nettles/Personal-Webpage
+https://laqwanda-nettles.github.io/Personal-Webpage/
+
+### Recipe App
+
+My recipe app, What's for Dinner?, incorporated object-oriented programming, API integration, and SCSS 7-1 architecture. I learned how to incorporate modals, use data attributes and dataset properties, and work with asynchronous functions. This project not only showcases my coding skills but also combines my passion for culinary arts with technology.
+
+https://github.com/Laqwanda-Nettles/Recipe-App
+https://laqwanda-nettles.github.io/Recipe-App/
+
+### Community Marketplace
+
+My most recent project is a mockup CRUD application that showcases skills I’ve acquired from Level 3 at CodeX, such as initializing Next.js projects, installing necessary npm packages, implementing Firebase’s authentication and data management, and familiarizing myself with Tailwind CSS styling. I also gained experience with modular components, environmental variables, and solving integration challenges.
+
+https://github.com/Codex-Level-3/community-marketplace
+https://communitymarketplace.netlify.app/
 
 ## Daily Logs
 
@@ -94,26 +134,6 @@ When troubleshooting deployment issues I recognized the need for better debuggin
 #### Learnings and Insights:
 
 Through this coding process, I've gained valuable insights into handling form submissions and implementing email functionality using Node.js. In `route.js`, I learned how to extract data from incoming POST requests and configure Nodemailer to send emails through Gmail. Then, in `Contact.jsx`, I built a user-friendly contact form component using React, allowing visitors to input their name, email, and message. Upon form submission, the data is sent to the server, and upon success, a confirmation message is logged. This experience has deepened my understanding of server-side integration in React applications and honed my skills in managing form submissions, essential for creating dynamic and interactive web experiences.
-
-## Projects
-
-These are links to the following projects showcased in the portfolio.
-
-### Ecommerce
-
-https://github.com/Laqwanda-Nettles/Bootstrap-Project
-
-### Blog
-
-https://github.com/Laqwanda-Nettles/Personal-Webpage
-
-### Recipe App
-
-https://github.com/Laqwanda-Nettles/Recipe-App
-
-### Community Marketplace
-
-https://github.com/Codex-Level-3/community-marketplace
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
